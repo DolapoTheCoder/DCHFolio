@@ -1,0 +1,9 @@
+.navbar {
+    text-align: center;
+    background-color: white;
+}
+
+.navbar :hover {
+    background-color: #FED503;
+    color: white;
+}
