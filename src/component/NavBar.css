@@ -1,9 +1,22 @@
 .navbar {
-    text-align: center;
-    background-color: white;
+    background-color: #01286A;
+    display: flex;
+    color: white;
 }
 
 .navbar :hover {
     background-color: #FED503;
     color: white;
+}
+
+.navbar :any-link {
+    color: white;
+    margin: 10%;
+    text-align: center;
+    border: 2px solid white;
+}
+
+.nav-logo {
+    height: 40vmin;
+    pointer-events: none;
 }

@@ -1,0 +1,16 @@
+.home {
+    padding-top: 5%;
+    text-align: left;
+}
+
+.home-title {
+    color: #FED503;
+    text-align: center;
+}
+
+.contactButton {
+    background-color: #01286A;
+    border-color: white;
+    border-radius: 8px;
+    color: white;
+}
