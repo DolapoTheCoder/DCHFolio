@@ -1,25 +1,29 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav";
-import Image  from "react-bootstrap/Image";
 import "./NavBar.css"
 import LOGO from "./images/LOGO.jpg"
+import { useLocation } from "react-router-dom";
+import { Container, Navbar, Nav } from "react-bootstrap";
 
 const NavBar = () => {
+    const location = useLocation();
     return (
-        <Nav className="navbar" variant="pills">
-            <Nav.Item>
-                <Nav.Link href="/"><Image src={ LOGO } alt="logo" className="nav-logo"/></Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link href="/" >Home</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link href="/portfolio">Our Portfolio</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link href="/contact">Contact Us</Nav.Link>
-            </Nav.Item>
-        </Nav>
+        <>
+            <Navbar bg="dark" data-bs-theme="dark" className="bg-body-tertiary">
+                <Container>
+                    <Navbar.Brand href="/">
+                        <img src={ LOGO } alt="logo" className="nav-logo"/>{' '}
+                        DeCentralHub
+                    </Navbar.Brand>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto">
+                            <Nav.Link href="/">Home</Nav.Link>
+                            <Nav.Link href="/portfolio">Our Portfolio</Nav.Link>
+                            <Nav.Link href="/contact">Contact Us</Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
+        </>
     )
 }
 

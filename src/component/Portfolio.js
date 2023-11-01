@@ -1,7 +1,13 @@
-import React from "react";
+import React from 'react'
+import NavBar from './NavBar'
 
-const Portoflio = () => {
+const Portfolio = () => {
+  return (
     <>
-        
+      <NavBar/>
+      <div>Portfolio</div>
     </>
+  )
 }
+
+export default Portfolio
